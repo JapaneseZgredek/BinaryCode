@@ -10,9 +10,14 @@ public class Main {
         System.out.println(mainNumber.getNumber());
         mainNumber.fromIntToBinary();
         int size = mainNumber.binary.size()/5;
+        int addingNumber;
+        char letter;
         System.out.println(size);
         for(int j=0; j<size; j++){
             mainNumber.convertFiveBitsFromStringToInt();
+            addingNumber = mainNumber.fromBinaryToInt();
+            letter = (char)(64+addingNumber);
+            System.out.print(letter);
         }
 
     }
