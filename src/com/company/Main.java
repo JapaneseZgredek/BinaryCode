@@ -8,5 +8,7 @@ public class Main {
         int n1 = scanner.nextInt();
         BinaryNumber mainNumber = new BinaryNumber(n1);
         System.out.println(mainNumber.getNumber());
+        mainNumber.fromIntToBinary();
+        System.out.println(mainNumber.binary);
     }
 }
