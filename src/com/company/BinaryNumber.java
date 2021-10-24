@@ -46,16 +46,13 @@ public class BinaryNumber {
     void convertFiveBitsFromStringToInt(){
         for(int i=0; i<5; i++){
             fiveBitsInt[i] = Integer.parseInt(binary.pop());
-            System.out.print(fiveBitsInt[i]);
         }
-        System.out.println();
     }
     int fromBinaryToInt(){
         int value = 0;
         for(int i=0; i<5; i++) {
             value = value + (int) (fiveBitsInt[i] * Math.pow(2,(4-i)));
         }
-        System.out.println(value);
         return value;
     }
 }
