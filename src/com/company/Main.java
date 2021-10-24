@@ -9,6 +9,11 @@ public class Main {
         BinaryNumber mainNumber = new BinaryNumber(n1);
         System.out.println(mainNumber.getNumber());
         mainNumber.fromIntToBinary();
-        System.out.println(mainNumber.binary);
+        int size = mainNumber.binary.size()/5;
+        System.out.println(size);
+        for(int j=0; j<size; j++){
+            mainNumber.convertFiveBitsFromStringToInt();
+        }
+
     }
 }
