@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter encrypted message: ");
         int n1 = scanner.nextInt();
         BinaryNumber mainNumber = new BinaryNumber(n1);
         mainNumber.fromIntToBinary();
